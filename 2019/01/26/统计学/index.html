@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="方便日后记录笔记，输出是对已学知识的自我总结，适合自己的知识体系才是最好的,">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="统计在手，天下我有 参考资料： 可汗学院：统计学 深入浅出统计学">
+<meta name="keywords" content="方便日后记录笔记，输出是对已学知识的自我总结，适合自己的知识体系才是最好的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="统计学">
+<meta property="og:url" content="http://yoursite.com/2019/01/26/统计学/index.html">
+<meta property="og:site_name" content="ikems">
+<meta property="og:description" content="统计在手，天下我有 参考资料： 可汗学院：统计学 深入浅出统计学">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://s2.ax1x.com/2019/01/26/kuM54g.jpg">
+<meta property="og:image" content="https://s2.ax1x.com/2019/01/27/kuLLVO.jpg">
+<meta property="og:image" content="https://s2.ax1x.com/2019/01/27/kuL5G9.jpg">
+<meta property="og:image" content="https://s2.ax1x.com/2019/01/27/kuLox1.jpg">
+<meta property="og:image" content="https://s2.ax1x.com/2019/01/27/kuLgbT.jpg">
+<meta property="og:image" content="https://s2.ax1x.com/2019/02/01/k3ckFI.png">
+<meta property="og:image" content="https://s2.ax1x.com/2019/02/01/k3ciTA.png">
+<meta property="og:image" content="https://s2.ax1x.com/2019/02/01/k3cnOg.png">
+<meta property="og:image" content="https://s2.ax1x.com/2019/02/01/k3q8hT.png">
+<meta property="og:updated_time" content="2019-02-01T13:23:28.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="统计学">
+<meta name="twitter:description" content="统计在手，天下我有 参考资料： 可汗学院：统计学 深入浅出统计学">
+<meta name="twitter:image" content="https://s2.ax1x.com/2019/01/26/kuM54g.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2019/01/26/统计学/">
+
+
+
+
+
+  <title>统计学 | ikems</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">ikems</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">ikems home</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/26/统计学/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jie Xing">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ikems">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">统计学</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-26T00:43:15+08:00">
+                2019-01-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/基础知识/" itemprop="url" rel="index">
+                    <span itemprop="name">基础知识</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>统计在手，天下我有</p>
+<p>参考资料：</p>
+<p>可汗学院：统计学</p>
+<p>深入浅出统计学</p>
+<a id="more"></a>
+<h2 id="Sample-and-Population"><a href="#Sample-and-Population" class="headerlink" title="Sample  and Population"></a>Sample  and Population</h2><p>​     当我们所要调查的对象过大且调查的对象的过程中，对象一直处于变化的过程中，我们可以通过 Sample 来特征表示 Population</p>
+<h3 id="计算"><a href="#计算" class="headerlink" title="计算"></a>计算</h3><p>μ = sample mean </p>
+<p>X = ptopulation mean</p>
+<p>两者计算方式无差别，只是数量的大小之分，总和/数量</p>
+<h3 id="如何保证样本的准确性"><a href="#如何保证样本的准确性" class="headerlink" title="如何保证样本的准确性"></a>如何保证样本的准确性</h3><p>​    1.2.1  明确目标总体</p>
+<p>​    1.2.2  确定抽样单位</p>
+<p>​    1.2.3   确定抽样空间</p>
+<p>​    只要是选定样本，都会存在主管和客观因素导致样本选择时发生偏倚，最终导致样本无法代表总体。偏倚的产生主要分为一下几个原因：</p>
+<p>​    ①  抽样空间中条目不齐全，即样本包含的种类不齐全</p>
+<p>​    ②  抽样单位不正确，抽样单位跨度选择不合理对</p>
+<p>​    ③   样本选取的抽样单位未出现在实际样本中，如调查问卷有些选项无法回复</p>
+<p>​    ④  样本缺乏随机性，与第一条有些相似，最终呈现的结果即选择的样本种类不全面</p>
+<h3 id="常用的提高样本选取准确性的方法"><a href="#常用的提高样本选取准确性的方法" class="headerlink" title="常用的提高样本选取准确性的方法"></a>常用的提高样本选取准确性的方法</h3><p>​    1.3.1  简单随机抽样（闭着眼瞎抽），可分为重复抽样和不重复抽样</p>
+<p>​    1.3.2  分层抽样，即划定总体的类别，在每个类别中进行随机抽样</p>
+<p>​    1.3.3  整群抽样，样本中有大量相似的群组，可对群组进行随机抽样，分层抽样的另一种形式</p>
+<p>​    1.3.4  系统抽样，取一定长度，再进行随机抽样</p>
+<p>以上方法只是在一定程度上提高了准确性，但只要是随机抽样，就会存在误差。</p>
+<h2 id="Variance"><a href="#Variance" class="headerlink" title="Variance"></a>Variance</h2><p>Dispersion    离中趋势的衡量，反应数值与均值之间的距离大小。</p>
+<p>你所取得 sample  有可能不包含实际总体均值，此时Sample variance  &lt;   Population variance </p>
+<p>各类方差：</p>
+<p><img src="https://s2.ax1x.com/2019/01/26/kuM54g.jpg" alt="kuM54g.jpg"></p>
+<h2 id="Random-Variable"><a href="#Random-Variable" class="headerlink" title="Random Variable"></a>Random Variable</h2><p>可以取很多值，但是无法求解，通常用大写字母表示（与传统变量相区别）。其本身是一种函数（更像用于判断，if  ,  elif  …..else），将随机过程映射到实际数字</p>
+<p>discrete random variable    离散随机变量，具体到某些数值</p>
+<p>continuous random variable   连续随机变量，某些取值区间</p>
+<h2 id="分布"><a href="#分布" class="headerlink" title="分布"></a>分布</h2><h3 id="离散概率分布"><a href="#离散概率分布" class="headerlink" title="离散概率分布"></a>离散概率分布</h3><p>可以将离散数据比作垫脚石，可以从一个数值跳至另一个数值，每个数值之间都有明确的间隔</p>
+<h4 id="几何分布："><a href="#几何分布：" class="headerlink" title="几何分布："></a>几何分布：</h4><p>前提：事件相互独立; 每次成功失败都有可能，且概率相同; 你关心的是为了取得第一次成功需要多少次实验</p>
+<p>公式：</p>
+<p><img src="https://s2.ax1x.com/2019/01/27/kuLLVO.jpg" alt="kuLLVO.jpg"></p>
+<p>即可理解为，要想第r次成功，必须先失败r-1次。随着r的逐渐增加，P（x=r）在逐渐减小。</p>
+<p>$$<br>期望：E(x) = ∑xP（X=x）<br>$$<br>通过对E(x)的计算，随着x的增大，其值越来越趋向一个固定的值：E(x) = </p>
+<p>简单理解为单次成功的概率为p，那么每1/p次中的尝试将会有1项成功。</p>
+<p>同理经过推到：</p>
+<p>$$<br>几何分布的方差为：Var（x） = q/p*2<br>$$</p>
+<h4 id="二项分布："><a href="#二项分布：" class="headerlink" title="二项分布："></a>二项分布：</h4><p>前提：独立实验，每次失败和成功的概率都相同，试验次数有限。和几何分布不同，二项分布关心的是获得成功的次数。二项分布的公式，本质是二项式的展开。我们不用通过得出概率的分布而列出每一个结果，关键在于用某种方式描述每一种结果的可能即可</p>
+<p>公式：</p>
+<p><img src="https://s2.ax1x.com/2019/01/27/kuL5G9.jpg" alt="kuL5G9.jpg"></p>
+<p>根据n和p的不同, p越接近0.5，直方图越对称，p&lt;0.5时，图形向右偏斜，p&gt;0.5时，向左偏斜。</p>
+<p>$$<br>期望：E(x) = np<br>$$</p>
+<p>$$<br>方差： Var（x）= npq<br>$$</p>
+<h4 id="伯努利分布："><a href="#伯努利分布：" class="headerlink" title="伯努利分布："></a>伯努利分布：</h4><p>简单理解为二项分布的一直最简单特殊的情况</p>
+<p>$$<br>μ =  （1-p）<em> 0 + p </em> 1 = p<br>$$<br>​                                    σ<sup>2</sup> = （1-p）（0-p）<sup>2</sup>+ p（1-p）<sup>2</sup>= p（1-p）</p>
+<h4 id="泊松分布："><a href="#泊松分布：" class="headerlink" title="泊松分布："></a>泊松分布：</h4><p>前提：单独事件在给定区间内随机、独立的发生，已知该区间内的时间平均发生次数 λ   </p>
+<p>X ~ Po（ λ）</p>
+<p>公式：</p>
+<p><img src="https://s2.ax1x.com/2019/01/27/kuLox1.jpg" alt="kuLox1.jpg"><br>$$<br>期望：E(x) =  λ<br>$$</p>
+<p>$$<br>方差： Var（x）=   λ<br>$$<br>泊松分布的均值、期望和方差均为 λ，其余其他概率分布的最大不同在于，不需要进行一系列实验，只描述了事件在特定区间内的发生次数，即有稳定的 λ。如果两个时间相互独立，那么他们的 λ可以相加</p>
+<p>例：X为电影院爆米花机一周发生故障的次数 λ1，Y为饮料机一周发生故障的次数 λ2,那么</p>
+<p>$$<br>P(X+Y) = P(X)+P(Y)<br>$$</p>
+<p>$$<br>X+Y ~Po( λ1+ λ2)<br>$$</p>
+<p>在我们计算二项分布时，当实验的次数过大，趋近于∞时，<sup>n</sup>C<sub>r</sub>可以近似的用泊松分布来代替。</p>
+<p>X ~ B(n,p)  ~ Po（λ）</p>
+<p>此时期望：λ  近似  np ，方差  λ  近似npq ，可以导出 np近似 npq ， 那么q的值就应当近似等于1而且n很大，才可成立。</p>
+<h3 id="连续概率分布"><a href="#连续概率分布" class="headerlink" title="连续概率分布"></a>连续概率分布</h3><p>连续的数据往往通过测量而不是计数所得，其结果取决于精度的要求，而离散数据关心的是某一特定数值的概率，而连续数据关心的则是一个特定范围的概率。</p>
+<p>求连续数据的概率分布通常需要先确定概率函数f(x),再通过面积来求解。</p>
+<h4 id="正态分布"><a href="#正态分布" class="headerlink" title="正态分布"></a>正态分布</h4><p>为何叫正态，因为他的f（x）看上去是合理的，符合常规的逻辑。</p>
+<p>X ~N(μ，σ<sup>2</sup>)   μ 指出曲线中央位置，σ表示分散性，其值越大，正态曲线越扁平即越宽。</p>
+<p>公式:<img src="https://s2.ax1x.com/2019/01/27/kuLgbT.jpg" alt="kuLgbT.jpg"></p>
+<p>在正态概率计算的过程中，可以将其标准化正态的为N(0， 1)，此可以理解为对函数进行平移和收缩（好像高一教过….），整个过程计算即为求X的标准分：<br>$$<br>z = （X  -  μ）/  σ<br>$$<br>X-μ  即相当于平移函数图像，除以σ，即对函数进行收缩，特定数值的标准分说明了数值与均值相距多少个标准差，可以获悉该数值与均值的相对相近程度</p>
+<p>计算出标准分后，一般可通过概率表进行查找对应数值的概率，而一般（经验）</p>
+<p>当区间在μ ± σ  的概率为68%， μ ± 2σ  的概率为95% ，    μ ± 3σ  的概率为97.5%</p>
+<h2 id="中心极限定理"><a href="#中心极限定理" class="headerlink" title="中心极限定理"></a>中心极限定理</h2><p>​    从均值为 μ 、方差为 σ<sup>2</sup>的任意一个总体中抽取样本量为n的样本，当n充分大时，样本均值的抽样分布近似服从均值为 μ、方差为 σ<sup>2</sup>/n 的正态分布。</p>
+<p>​    随着样本容量 n 变大，以及抽样的次数增多，样本均值的分布越来越近似正态分布，而其标准差也会越来越小，从而使得分布函数更加收敛 </p>
+<h2 id="置信区间"><a href="#置信区间" class="headerlink" title="置信区间"></a>置信区间</h2><p>​    通过样本来预测总体，如果样本很接近整体，那么自然可以得到很好的结果，但是多近才能算“够接近”。世界如此复杂，不可能总希望用一个精确的数字来表达所有的事情，所以通过一个合理的区间来表示，可能会更合适，即可信区间。</p>
+<p>P（a &lt;  μ  &lt;b）= 0.95  则（a, b）被称为置信区间</p>
+<p>​    1.选择总体统计量</p>
+<p>​    2.求出其抽样分布</p>
+<p>​    3.决定置信水平</p>
+<p>​    4.求出置信上下限</p>
+<p>95%只是人为定义的置信区间，并不一定只有才95%范围内才可性，应当根据实际情况来选择，90% 99%，只要符合实际情况即可。</p>
+<h4 id="t分布："><a href="#t分布：" class="headerlink" title="t分布："></a>t分布：</h4><p>当可选取的样本容量较小，正态分布的曲线较为扁平。样本的σ<sup>2</sup>不足估计总体方差的真实值。</p>
+<p>参数—ν，ν = n-1，ν称为自由度 ，T符合t分布且自由有度为ν：     T ~ t（v）</p>
+<p>t分布有对应的概率表，根据 v 和置信区间决定系数，从而计算置信区间</p>
+<h2 id="假设检验"><a href="#假设检验" class="headerlink" title="假设检验"></a>假设检验</h2><p>​    医药代表说XXX药能治疗90%的病人，医生抽样治疗后治愈率不到90%，这时该如何抉择，==我们假定医药代表说的是真的，对医生的抽样进行检验是否有误，最后反过来证明医药代表的话。——即假设检验==</p>
+<p>  假设检验的六个步骤：</p>
+<p>​    ①确定要进行检验的假设</p>
+<p>​        原假设：假定药物至少能治愈90%的病人,即H<sub>0</sub>:p = 0.9;</p>
+<p>​        备择假设：与原假设对立，如果H<sub>0</sub>不成立，即要接受H<sub>1</sub>，即H<sub>1</sub>:p = 0.9;</p>
+<p>​    ②选择检验统计量</p>
+<p>​        X（测试人数）作为检验统计量，符合二项分布，X ~B （15, 0.9）​    </p>
+<p>​    ③确定用于决策的拒绝域</p>
+<p>​        确定拒绝域后，如果实际治疗的患者人数位于拒绝域以内，就可判定原假                          设不成立，我们把拒绝域的分界点称为‘c’ —临界值。有些类似于置信区间，区间外的不成立，区间内的我们选择相信</p>
+<p>​        ==求解拒绝域==：</p>
+<p>​        确定下显著性水平—α，==即希望样本结果的不可能程度达到多大，就拒绝原假设==，以5%为显著性水平检验制药公司的断言，则：<br>$$<br>P（X &lt; c）&lt; α<br>$$<br>​        显著性水平设置为多少，取决于你想以多大力度拒绝原假设，α越小，检验力度越大</p>
+<p>​        在构建拒绝域时，我们应当考虑是==单尾检验==还是==双尾检验==，单尾检验的拒绝域在数据的左右任一侧，双尾的一般一份为二位于数据的两侧。==如果备选假设中只是判断&lt;或&gt;某一个条件，那么相对应的选择首或尾，如果备选假设中出现了 =，那么就需要将拒绝域一分为二，两侧各占α/2.==</p>
+<p>​    ④求出检验统计量的p值</p>
+<p>​        P(X≤11） =  1- P（X &gt; 12）= 0.0555 = p，p的取值即取得样本结果或拒绝域方向的更极端的概率</p>
+<p>​    ⑤查看样本结果是否位于拒绝域内</p>
+<p>​        此时的X取了临界拒绝域的极限值，p &gt; 0.5, 那么判定p不在拒绝域中</p>
+<p>​    ⑥做出决策</p>
+<p>​        接受原假设。即当检验水平为5%时，我们接受医药代表的宣称。</p>
+<p>在上述案例中，X =15仍然比较小，我们尝试增大样本容量。重新走一边判断的过程。人数定位100,其中服用有效80 ，无效20</p>
+<p>​    ① 原假设，备选假设皆不变。</p>
+<p>​    ② 样本量增加至100， X ~ B（100， 0.9），因为计算的不便，此时我们可以用正态代替二项，即X ~ N（90， 9），</p>
+<p>​    ③  拒绝域： P （X &lt; -1.64) = 0.05</p>
+<p>​    ④ 求p ：  Z = （80 -90）/3 = -3.3    P（Z &lt; -3.3） = 0.0004</p>
+<p>​    ⑤  位于拒绝域内</p>
+<p>​    ⑥ 拒绝原假设</p>
+<h3 id="第一类、第二类错误"><a href="#第一类、第二类错误" class="headerlink" title="第一类、第二类错误"></a>第一类、第二类错误</h3><p>​    当进行假设检验时，可能会出现拒绝正确的原假设即为第一类错误，接受错误的备选假设即为第二类错误。</p>
+<p>​    发生第一类错误的概率，即为 α， 因为处于拒绝域内，即会导致误判，这样P（第一类错误） = α</p>
+<p>​    发生第二类错误的概率，</p>
+<p>​    ==先判定备选假设是否有特定的数值，如果没有无法计算，如果有才可计算==。</p>
+<p>​    以上面样本容量100为例，P （Z&lt; -1.64）= 0.05 ,  则说明拒绝域以外的数值Z ≥-1.64， 逆标准化，得到 X ≥ 85.05 。</p>
+<p>​    对备选假设进行验证， P（X ≥ 85.08）， X ~ N（80， 16）， z  = 1.27，</p>
+<p>P （Z ≥ 1.27） = 1 - （P &lt; 1.27） = 0.102.</p>
+<h3 id="功效"><a href="#功效" class="headerlink" title="功效"></a>功效</h3><p>检验假设的==功效==也是一种概率，原假设为假的情况下拒绝它的概率，即原假设为假接受它的相反情况，也是就第二类错误的相反情况。可得：<br>$$<br>功效 = 1 -β （第二类错误的概率）<br>$$</p>
+<h2 id="线性回归"><a href="#线性回归" class="headerlink" title="线性回归"></a>线性回归</h2><p>​    之前所学的多是单变量自身的变化趋势，而我们往往需要发现挖掘的是多个变量之间的关系。先简单了解两个变量之间简单的线性关系。</p>
+<p>​    求两个变量之间的线性关系，可以理解为：依据规定，通过一条直线模拟穿过所有的变量点，即找出最佳拟合线。<br>$$<br>y  = a + bx<br>$$<br>此处的规定即为，让每个变量y与拟合线模拟出的yi值之差最小，==注意：此处不是变量y到拟合线的直线距离==。</p>
+<p>通过最小二乘回归法计算y的出差我们可得：</p>
+<p><img src="https://s2.ax1x.com/2019/02/01/k3ckFI.png" alt="k3ckFI.png"></p>
+<p><img src="https://s2.ax1x.com/2019/02/01/k3ciTA.png" alt="k3ciTA.png"></p>
+<p>我们用直线的相关系数（拟合度）， R 来表示我们最佳拟合线的精确程度，R越接近1或-1，表明拟合曲线的精确度越高：</p>
+<p><img src="https://s2.ax1x.com/2019/02/01/k3cnOg.png" alt="k3cnOg.png"></p>
+<p>==注：拟合曲线求出的只是两个变量之间的数学关系，并不代表两者之间一定存在某种必然联系==</p>
+<p>代码实现：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">from</span> io <span class="keyword">import</span> StringIO</span><br><span class="line"><span class="keyword">from</span> sklearn <span class="keyword">import</span> linear_model</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">csv_data = <span class="string">'square_feet,price\n150,6450\n200,7450\n250,8450\n300,9450\n350,11450\n400,15450\n600,18450\n'</span></span><br><span class="line">df = pd.read_csv(StringIO(csv_data))</span><br><span class="line"><span class="comment">#建立回归模型</span></span><br><span class="line">regr = linear_model.LinearRegression()</span><br><span class="line"><span class="comment">#拟合，reshape（-1，1）表明此处拟合的为一维图像</span></span><br><span class="line">regr.fit(df[<span class="string">'square_feet'</span>].reshape(<span class="number">-1</span>, <span class="number">1</span>), df[<span class="string">'price'</span>])</span><br><span class="line">a, b = regr.coef_, regr.intercept_</span><br><span class="line"><span class="comment">#画数据散点图</span></span><br><span class="line">plt.scatter(df[<span class="string">'square_feet'</span>], df[<span class="string">'price'</span>], color=<span class="string">'blue'</span>)</span><br><span class="line"><span class="comment">#画拟合图</span></span><br><span class="line">plt.plot(df[<span class="string">'square_feet'</span>], regr.predict(df[<span class="string">'square_feet'</span>].reshape(<span class="number">-1</span>,<span class="number">1</span>)), color=<span class="string">'red'</span>, linewidth=<span class="number">4</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+<p>得到的结果如下图所示：</p>
+<p><img src="https://s2.ax1x.com/2019/02/01/k3q8hT.png" alt="k3q8hT.png"></p>
+<h2 id="χ2检验"><a href="#χ2检验" class="headerlink" title="χ2检验"></a>χ<sup>2</sup>检验</h2><p>​    χ<sup>2</sup>, χ 读音为 ‘卡’，这种分布通过一个检验统计量来比较期望结果和实际结果之间的差别，然后得出观察频数极值的发生概率。主要用于1、检验拟合优度、2、检验两个变量的独立性。</p>
+<p>​    χ<sup>2</sup>的数值越小，观察频数和期望频数之间的总差值越小，表明当前情况很正常。但当χ<sup>2</sup>的数值大到一定程度，就表明情况异常，那么如何定义这个大的程度，即为X<sup>2</sup>分布。</p>
+<p>χ<sup>2</sup>分布用到一个参数ν，若使用特定参数ν的X<sup>2</sup> 分布以及检验统计量X<sup>2</sup> ，可表示为：</p>
+<p>​                                    X<sup>2</sup>  ~  χ<sup>2</sup>（ν）</p>
+<p>当ν等于1或2时， X<sup>2</sup>分布为一条先高厚底的平滑曲线，此时的观察频数更有可能接近期望频数；当ν大于2时，随着X<sup>2</sup>递增，图形先低，后高，再低，当ν很大时，图形接近正态分布。<br>$$<br>ν = （组数）—（限制数）<br>$$<br>χ<sup>2</sup>检验为单尾检验，右尾被称为拒绝域(通过χ<sup>2</sup>概率表查得)，通过检查统计量是否位于拒绝域内，即可判定根据期望分布得出的结果的可能性，若用α显著性水平进行检验，记作：</p>
+<p>​                                χ<sup>2</sup><sub>α</sub>（ν）</p>
+<p>χ<sup>2</sup>检验的过程与假设检验一致，但多了计算期望频数和自由度以及计算检验统计量X<sup>2</sup>  </p>
+<p>χ<sup>2</sup>拟合优度检验对相对多的概率分布都有效，其难度在于自由度v的计算：</p>
+<p>二项分布中常计为v = n-1（已知p）；v = n -2（未知p）</p>
+<p>泊松分布中常计为v = n-1（已知λ）；v = n -2（未知λ）</p>
+<p>正态分布常计为 v = n-1 （已知σ<sup>2</sup>&gt;和μ）; v = n - 3（未知已知σ<sup>2</sup>&gt;和μ）</p>
+<p>参考：</p>
+<p>深入浅出统计学</p>
+<p>可汗：统计学</p>
+<p><a href="https://www.cnblogs.com/hhh5460/p/5786115.html#top" target="_blank" rel="noopener">https://www.cnblogs.com/hhh5460/p/5786115.html#top</a></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/方便日后记录笔记，输出是对已学知识的自我总结，适合自己的知识体系才是最好的/" rel="tag"># 方便日后记录笔记，输出是对已学知识的自我总结，适合自己的知识体系才是最好的</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/01/25/利用hexo和coding搭建博客/" rel="next" title="利用hexo和coding搭建博客">
+                <i class="fa fa-chevron-left"></i> 利用hexo和coding搭建博客
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/01/26/代理池/" rel="prev" title="代理池">
+                代理池 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Jie Xing</p>
+              <p class="site-description motion-element" itemprop="description">Keep Learning</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">分类</span>
+                
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Sample-and-Population"><span class="nav-number">1.</span> <span class="nav-text">Sample  and Population</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#计算"><span class="nav-number">1.1.</span> <span class="nav-text">计算</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#如何保证样本的准确性"><span class="nav-number">1.2.</span> <span class="nav-text">如何保证样本的准确性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常用的提高样本选取准确性的方法"><span class="nav-number">1.3.</span> <span class="nav-text">常用的提高样本选取准确性的方法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Variance"><span class="nav-number">2.</span> <span class="nav-text">Variance</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Random-Variable"><span class="nav-number">3.</span> <span class="nav-text">Random Variable</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分布"><span class="nav-number">4.</span> <span class="nav-text">分布</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#离散概率分布"><span class="nav-number">4.1.</span> <span class="nav-text">离散概率分布</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#几何分布："><span class="nav-number">4.1.1.</span> <span class="nav-text">几何分布：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#二项分布："><span class="nav-number">4.1.2.</span> <span class="nav-text">二项分布：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#伯努利分布："><span class="nav-number">4.1.3.</span> <span class="nav-text">伯努利分布：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#泊松分布："><span class="nav-number">4.1.4.</span> <span class="nav-text">泊松分布：</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#连续概率分布"><span class="nav-number">4.2.</span> <span class="nav-text">连续概率分布</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#正态分布"><span class="nav-number">4.2.1.</span> <span class="nav-text">正态分布</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#中心极限定理"><span class="nav-number">5.</span> <span class="nav-text">中心极限定理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#置信区间"><span class="nav-number">6.</span> <span class="nav-text">置信区间</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#t分布："><span class="nav-number">6.0.1.</span> <span class="nav-text">t分布：</span></a></li></ol></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#假设检验"><span class="nav-number">7.</span> <span class="nav-text">假设检验</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#第一类、第二类错误"><span class="nav-number">7.1.</span> <span class="nav-text">第一类、第二类错误</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#功效"><span class="nav-number">7.2.</span> <span class="nav-text">功效</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#线性回归"><span class="nav-number">8.</span> <span class="nav-text">线性回归</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#χ2检验"><span class="nav-number">9.</span> <span class="nav-text">χ2检验</span></a></li></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jie Xing</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
