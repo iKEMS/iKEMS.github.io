@@ -96,7 +96,7 @@
 <meta property="og:image" content="http://20181228.oss-cn-beijing.aliyuncs.com/2019-03-06-061609.png">
 <meta property="og:image" content="http://20181228.oss-cn-beijing.aliyuncs.com/2019-03-06-064722.png">
 <meta property="og:image" content="http://20181228.oss-cn-beijing.aliyuncs.com/2019-03-06-065106.png">
-<meta property="og:updated_time" content="2019-03-06T07:08:05.203Z">
+<meta property="og:updated_time" content="2019-03-06T07:30:40.358Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="利用hexo和coding搭建博客">
 <meta name="twitter:description" content="安装环境：​    Node.js    ​    Git.  版本管理系统，简单的说就是可以软将件退回之前的版本，git会详细记录软件的详细信息，包括时间、文件改动等等，避免占用过多的资源空间">
@@ -308,7 +308,19 @@
             
 
             
+              <span class="post-meta-divider">|</span>
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2019-03-06T15:30:40+08:00">
+                2019-03-06
+              </time>
             
           </span>
 
@@ -447,6 +459,8 @@
 <h4 id="设置小型代码块颜色"><a href="#设置小型代码块颜色" class="headerlink" title="设置小型代码块颜色"></a>设置小型代码块颜色</h4><p>修改<code>\themes\next\source\css\_variables\base.styl</code>文件，修改$code-background和$code-foreground的值：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Code &amp; Code Blocks</span></span><br><span class="line"><span class="comment">// --------------------------------------------------</span></span><br><span class="line">$code-font-family               = $font-family-monospace</span><br><span class="line">$code-font-size                 = <span class="number">13</span>px</span><br><span class="line">$code-font-size                 = unit(hexo-config(<span class="string">'font.codes.size'</span>), px) <span class="keyword">if</span> hexo-config(<span class="string">'font.codes.size'</span>) is a <span class="string">'unit'</span></span><br><span class="line">$code-border-radius             = <span class="number">3</span>px</span><br><span class="line">$code-foreground                = $black-light</span><br><span class="line">$code-background                = $gainsboro</span><br></pre></td></tr></table></figure>
 <h4 id="文章字数统计"><a href="#文章字数统计" class="headerlink" title="文章字数统计"></a>文章字数统计</h4><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Post wordcount display settings</span></span><br><span class="line"><span class="comment"># Dependencies: https://github.com/willin/hexo-wordcount</span></span><br><span class="line">post_wordcount:</span><br><span class="line">  item_text: true</span><br><span class="line">  wordcount: true</span><br><span class="line">  min2read: false</span><br><span class="line">  totalcount: true</span><br><span class="line">  separated_meta: true</span><br></pre></td></tr></table></figure>
+<p>#### </p>
+<h4 id="更新时间设置"><a href="#更新时间设置" class="headerlink" title="更新时间设置"></a>更新时间设置</h4><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Post meta display settings</span></span><br><span class="line">post_meta:</span><br><span class="line">  item_text: true</span><br><span class="line">  created_at: true</span><br><span class="line">  updated_at:</span><br><span class="line">    enabled: true  #更新于</span><br><span class="line">    <span class="comment"># If true, show updated date label only if `updated date` different from 'created date' (post edited in another day than was created).</span></span><br><span class="line">    <span class="comment"># And if post will edited in same day as created, edited time will show in popup title under created time label.</span></span><br><span class="line">    <span class="comment"># If false show anyway, but if post edited in same day, show only edited time.</span></span><br><span class="line">    another_day: true</span><br><span class="line">  categories: true</span><br></pre></td></tr></table></figure>
 <h3 id="添加valine评论系统"><a href="#添加valine评论系统" class="headerlink" title="添加valine评论系统"></a>添加valine评论系统</h3><p>next 5.14版本已经集成了Valine，所以无需过多配置，先注册<a href="https://leancloud.cn" target="_blank" rel="noopener">LenaCloud</a>账号</p>
 <p>申请免费的应用,名字随便取：</p>
 <p><img src="http://20181228.oss-cn-beijing.aliyuncs.com/2019-03-06-061727.png" alt="image-20190306141725134"></p>
@@ -465,8 +479,19 @@
 <p>重新上传后，就可以看到标题下方的访问统计了</p>
 <p><img src="http://20181228.oss-cn-beijing.aliyuncs.com/2019-03-06-065106.png" alt="image-20190306145105503"></p>
 <p>参考：</p>
+<p>网站搭建</p>
+<ul>
+<li><a href="http://www.hotheat.top/" target="_blank" rel="noopener">http://www.hotheat.top/</a></li>
+<li><a href="https://yuweiguocn.github.io/mac-hexo-github-blog-tech-2/" target="_blank" rel="noopener">https://yuweiguocn.github.io/mac-hexo-github-blog-tech-2/</a></li>
+</ul>
+<p>网站优化：</p>
+<ul>
+<li><a href="https://segmentfault.com/a/1190000013660164#articleHeader25" target="_blank" rel="noopener">https://segmentfault.com/a/1190000013660164#articleHeader25</a></li>
+<li><a href="https://wuchenxu.com/2015/12/13/Static-Blog-hexo-github-7-display-updated-date/" target="_blank" rel="noopener">https://wuchenxu.com/2015/12/13/Static-Blog-hexo-github-7-display-updated-date/</a></li>
+</ul>
 <p>valine评论系统：</p>
 <p><a href="https://blog.csdn.net/blue_zy/article/details/79071414" target="_blank" rel="noopener">https://blog.csdn.net/blue_zy/article/details/79071414</a></p>
+<p><a href="https://notes.doublemine.me/2015-10-21-%E4%B8%BANexT%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E9%98%85%E8%AF%BB%E9%87%8F%E7%BB%9F%E8%AE%A1%E5%8A%9F%E8%83%BD.html#%E9%85%8D%E7%BD%AELeanCloud" target="_blank" rel="noopener">https://notes.doublemine.me/2015-10-21-%E4%B8%BANexT%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E9%98%85%E8%AF%BB%E9%87%8F%E7%BB%9F%E8%AE%A1%E5%8A%9F%E8%83%BD.html#%E9%85%8D%E7%BD%AELeanCloud</a></p>
 
       
     </div>
@@ -644,7 +669,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装环境："><span class="nav-number">1.</span> <span class="nav-text">安装环境：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装hexo"><span class="nav-number">2.</span> <span class="nav-text">安装hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#部署"><span class="nav-number">3.</span> <span class="nav-text">部署</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Github上新建仓库"><span class="nav-number">3.1.</span> <span class="nav-text">Github上新建仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#绑定-SSH-Key"><span class="nav-number">3.2.</span> <span class="nav-text">绑定 SSH Key</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置网站"><span class="nav-number">3.3.</span> <span class="nav-text">配置网站</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#网站性能优化"><span class="nav-number">4.</span> <span class="nav-text">网站性能优化</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#next主题优化"><span class="nav-number">4.1.</span> <span class="nav-text">next主题优化</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#设置字体"><span class="nav-number">4.1.1.</span> <span class="nav-text">设置字体</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#设置代码高亮"><span class="nav-number">4.1.2.</span> <span class="nav-text">设置代码高亮</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#设置小型代码块颜色"><span class="nav-number">4.1.3.</span> <span class="nav-text">设置小型代码块颜色</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#文章字数统计"><span class="nav-number">4.1.4.</span> <span class="nav-text">文章字数统计</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加valine评论系统"><span class="nav-number">4.2.</span> <span class="nav-text">添加valine评论系统</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#网站访问统计"><span class="nav-number">4.3.</span> <span class="nav-text">网站访问统计</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装环境："><span class="nav-number">1.</span> <span class="nav-text">安装环境：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装hexo"><span class="nav-number">2.</span> <span class="nav-text">安装hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#部署"><span class="nav-number">3.</span> <span class="nav-text">部署</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Github上新建仓库"><span class="nav-number">3.1.</span> <span class="nav-text">Github上新建仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#绑定-SSH-Key"><span class="nav-number">3.2.</span> <span class="nav-text">绑定 SSH Key</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置网站"><span class="nav-number">3.3.</span> <span class="nav-text">配置网站</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#网站性能优化"><span class="nav-number">4.</span> <span class="nav-text">网站性能优化</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#next主题优化"><span class="nav-number">4.1.</span> <span class="nav-text">next主题优化</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#设置字体"><span class="nav-number">4.1.1.</span> <span class="nav-text">设置字体</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#设置代码高亮"><span class="nav-number">4.1.2.</span> <span class="nav-text">设置代码高亮</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#设置小型代码块颜色"><span class="nav-number">4.1.3.</span> <span class="nav-text">设置小型代码块颜色</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#文章字数统计"><span class="nav-number">4.1.4.</span> <span class="nav-text">文章字数统计</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#更新时间设置"><span class="nav-number">4.1.5.</span> <span class="nav-text">更新时间设置</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加valine评论系统"><span class="nav-number">4.2.</span> <span class="nav-text">添加valine评论系统</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#网站访问统计"><span class="nav-number">4.3.</span> <span class="nav-text">网站访问统计</span></a></li></ol></li></ol></div>
             
 
           </div>
