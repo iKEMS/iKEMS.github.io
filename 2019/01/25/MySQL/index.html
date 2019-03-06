@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="SQL数据库基础数据库（database）​    一个以某种有das组织的方式存储的==数据集合==，此处的数据集合通常一个文件或是一组文件。 ​    ==区别==： ​    数据库和DBMS并不指同一个东西，DBMS是我们操作数据库的软件，我们平时接触的基本都是DBMS。而数据库只负责存储数据，至于它在什么地方，以什么形式存在，暂且可以不用关心。 表（table）​    对于一个数据库，">
+<meta name="description" content="SQL">
 <meta name="keywords" content="熟练掌握SQL语句">
 <meta property="og:type" content="article">
 <meta property="og:title" content="MySQL学习">
 <meta property="og:url" content="http://yoursite.com/2019/01/25/MySQL/index.html">
 <meta property="og:site_name" content="ikems">
-<meta property="og:description" content="SQL数据库基础数据库（database）​    一个以某种有das组织的方式存储的==数据集合==，此处的数据集合通常一个文件或是一组文件。 ​    ==区别==： ​    数据库和DBMS并不指同一个东西，DBMS是我们操作数据库的软件，我们平时接触的基本都是DBMS。而数据库只负责存储数据，至于它在什么地方，以什么形式存在，暂且可以不用关心。 表（table）​    对于一个数据库，">
+<meta property="og:description" content="SQL">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-03-05T18:42:53.745Z">
+<meta property="og:updated_time" content="2019-03-05T18:47:47.756Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MySQL学习">
-<meta name="twitter:description" content="SQL数据库基础数据库（database）​    一个以某种有das组织的方式存储的==数据集合==，此处的数据集合通常一个文件或是一组文件。 ​    ==区别==： ​    数据库和DBMS并不指同一个东西，DBMS是我们操作数据库的软件，我们平时接触的基本都是DBMS。而数据库只负责存储数据，至于它在什么地方，以什么形式存在，暂且可以不用关心。 表（table）​    对于一个数据库，">
+<meta name="twitter:description" content="SQL">
 
 
 
@@ -328,6 +328,16 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/01/25/MySQL/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/01/25/MySQL/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -352,7 +362,8 @@
       
 
       
-        <h1 id="SQL"><a href="#SQL" class="headerlink" title="SQL"></a>SQL</h1><h2 id="数据库基础"><a href="#数据库基础" class="headerlink" title="数据库基础"></a>数据库基础</h2><h3 id="数据库（database）"><a href="#数据库（database）" class="headerlink" title="数据库（database）"></a>数据库（database）</h3><p>​    一个以某种有das组织的方式存储的==数据集合==，此处的数据集合通常一个文件或是一组文件。</p>
+        <h1 id="SQL"><a href="#SQL" class="headerlink" title="SQL"></a>SQL</h1><a id="more"></a>
+<h2 id="数据库基础"><a href="#数据库基础" class="headerlink" title="数据库基础"></a>数据库基础</h2><h3 id="数据库（database）"><a href="#数据库（database）" class="headerlink" title="数据库（database）"></a>数据库（database）</h3><p>​    一个以某种有das组织的方式存储的==数据集合==，此处的数据集合通常一个文件或是一组文件。</p>
 <p>​    ==区别==：</p>
 <p>​    数据库和DBMS并不指同一个东西，DBMS是我们操作数据库的软件，我们平时接触的基本都是DBMS。而数据库只负责存储数据，至于它在什么地方，以什么形式存在，暂且可以不用关心。</p>
 <h3 id="表（table）"><a href="#表（table）" class="headerlink" title="表（table）"></a>表（table）</h3><p>​    对于一个数据库，我们可以将其进行分类，近似的可以理解为对电脑的磁盘进行分区，C盘，D盘……等等。而当我们往其中存储数据的时候，我们可以存储在不同盘符的表中，表是对数据的进一步分类存储单元。</p>
@@ -621,6 +632,9 @@
           
 
   
+    <div class="comments" id="comments">
+    </div>
+  
 
 
 
@@ -668,7 +682,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -749,6 +763,15 @@
   </span>
   <span class="author" itemprop="copyrightHolder">Jie Xing</span>
 
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count"></span>
   
 </div>
 
@@ -904,6 +927,28 @@
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: '7Is9hHod5NUdvKQl6U8AEQn9-gzGzoHsz',
+        appKey: '8BXrnGrnxbH7pJPGSVfgTkMl',
+        placeholder: '欢迎一起交流',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 
