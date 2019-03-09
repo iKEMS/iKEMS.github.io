@@ -10,9 +10,33 @@
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+<style>
+    .pace .pace-progress {
+        background: #1E92FB; /*进度条颜色*/
+        height: 3px;
+    }
+    .pace .pace-progress-inner {
+         box-shadow: 0 0 10px #1E92FB, 0 0 5px     #1E92FB; /*阴影颜色*/
+    }
+    .pace .pace-activity {
+        border-top-color: #1E92FB;    /*上边框颜色*/
+        border-left-color: #1E92FB;    /*左边框颜色*/
+    }
+</style>
+
+
 <meta name="theme-color" content="#222">
 
 
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
 
 
 
@@ -89,17 +113,19 @@
 <meta property="og:site_name" content="ikems">
 <meta property="og:description" content="安装环境：​    Node.js    ​    Git.">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://s2.ax1x.com/2019/01/25/kmUuwR.png">
-<meta property="og:image" content="https://s2.ax1x.com/2019/01/25/kmdjSK.png">
-<meta property="og:image" content="https://s2.ax1x.com/2019/01/25/kmrAEQ.png">
-<meta property="og:image" content="https://s2.ax1x.com/2019/01/25/kmsmIH.png">
+<meta property="og:image" content="http://20181228.oss-cn-beijing.aliyuncs.com/2019-03-09-101058.png">
+<meta property="og:image" content="http://20181228.oss-cn-beijing.aliyuncs.com/2019-03-09-101319.png">
+<meta property="og:image" content="http://20181228.oss-cn-beijing.aliyuncs.com/2019-03-09-100901.png">
+<meta property="og:image" content="http://20181228.oss-cn-beijing.aliyuncs.com/2019-03-09-102317.png">
+<meta property="og:image" content="http://20181228.oss-cn-beijing.aliyuncs.com/2019-03-09-102441.png">
+<meta property="og:image" content="http://20181228.oss-cn-beijing.aliyuncs.com/2019-03-09-103035.png">
 <meta property="og:image" content="http://20181228.oss-cn-beijing.aliyuncs.com/2019-03-06-060302.png">
 <meta property="og:image" content="http://20181228.oss-cn-beijing.aliyuncs.com/2019-03-09-064605.jpg">
-<meta property="og:updated_time" content="2019-03-09T06:46:49.847Z">
+<meta property="og:updated_time" content="2019-03-09T10:47:35.172Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="利用hexo和coding搭建博客">
 <meta name="twitter:description" content="安装环境：​    Node.js    ​    Git.">
-<meta name="twitter:image" content="https://s2.ax1x.com/2019/01/25/kmUuwR.png">
+<meta name="twitter:image" content="http://20181228.oss-cn-beijing.aliyuncs.com/2019-03-09-101058.png">
 
 
 
@@ -327,7 +353,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-03-09T14:46:49+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2019-03-09T18:47:35+08:00">
                 2019-03-09
               </time>
             
@@ -381,7 +407,7 @@
                
                  <span class="post-meta-item-text">热度&#58;</span>
                
-                 <span class="leancloud-visitors-count"></span>
+                 <span class="leancloud-visitors-count">℃</span>
              </span>
           
 
@@ -437,16 +463,16 @@
 <p>Hexo安装完成后，初始化Hexo：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
 <p>成功后文件夹自动生成相关文件</p>
-<p><img src="https://s2.ax1x.com/2019/01/25/kmUuwR.png" alt="kmUuwR.png"></p>
-<p>本地调试运行，生成网页后，可在本地端口localhost:4000打开</p>
+<p><img src="http://20181228.oss-cn-beijing.aliyuncs.com/2019-03-09-101058.png" alt="image-20190309181053294"></p>
+<p>本地调试运行，生成网页后，可在本地端口localhost:4000打开，看到<code>hello word</code></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#生成网页</span><br><span class="line">hexo g</span><br><span class="line">#本地端口打开</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-<p><img src="https://s2.ax1x.com/2019/01/25/kmdjSK.png" alt="kmdjSK.png"></p>
 <p>添加文章，在hexo\source_posts文件夹下有对应文章的名的md文件，也可以在该目录下直接新建文件。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#生成对应文章名的文件</span><br><span class="line">hexo new &quot;********&quot;</span><br><span class="line">#生成网页，在本地端口查看，第一篇即完成</span><br><span class="line">hexo s -g</span><br></pre></td></tr></table></figure>
 <h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><p>把文章部署到github和coding上，部署哪个都可以，github国外服务器，上传后需要等一段时间才可同步，coding国内解析的速度更快</p>
 <h3 id="Github上新建仓库"><a href="#Github上新建仓库" class="headerlink" title="Github上新建仓库"></a>Github上新建仓库</h3><p>1.在 github 中创建新仓库，仓库名字格式「username.github.io」，勾选用初始化 README</p>
-<p><img src="https://s2.ax1x.com/2019/01/25/kmrAEQ.png" alt="kmrAEQ.png"></p>
-<p>2.在 Setting 页面的 Github Pages 中，Source 显示为 master branch</p>
+<p><img src="http://20181228.oss-cn-beijing.aliyuncs.com/2019-03-09-101319.png" alt="image-20190309181316179"></p>
+<p>2.在 Setting 页面的 Github Pages 中，Source 显示为 master branch，如果已经有域名可以在此处绑定自己的域名</p>
+<p><img src="http://20181228.oss-cn-beijing.aliyuncs.com/2019-03-09-100901.png" alt="image-20190309180858192"></p>
 <h3 id="绑定-SSH-Key"><a href="#绑定-SSH-Key" class="headerlink" title="绑定 SSH Key"></a>绑定 SSH Key</h3><ol>
 <li>在本地找到 id_rsa.pub 文件，进入 github，Settings →→ SSH and GPG keys →→ New SSH key，将 ssh key 粘贴进去</li>
 <li><code>ssh -T git@github.com</code>验证 ssh key 是否添加成功</li>
@@ -459,9 +485,14 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">#repository需要使用ssh方式进行复制</span><br><span class="line">#注意缩进，每个冒号后面都有空格！！！！</span><br><span class="line">#此处同时部署coding,所以仓库又两个上传方式</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository:</span><br><span class="line">    github: git@github.com:iKEMS/iKEMS.github.io.git</span><br><span class="line">    coding: git@git.dev.tencent.com:iKEMS/iKEMS.coding.me.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
 <p>3.注册域名</p>
 <p>提供域名的网站很多，两大云，万网等等都可以，这里选择阿里云的域名。Github setting 里 Github page 页面中填入新的域名。保存后，此时仓库中会多出 CNAME 文件，里面是域名信息。</p>
-<p><img src="https://s2.ax1x.com/2019/01/25/kmsmIH.png" alt="kmsmIH.png"></p>
 <p>下次执行 <code>hexo d</code> 时，CNAME 文件会被删掉。需要本地在 source 目录中新建 CNAME 文件，里面写上域名地址 「<a href="http://www.ikems.top」，下次执行" target="_blank" rel="noopener">www.ikems.top」，下次执行</a> <code>hexo d</code> 时会自动复制到 post 文件夹下.</p>
-<p>至此此次搭建已基本完成</p>
+<h3 id="Coding-page"><a href="#Coding-page" class="headerlink" title="Coding page"></a>Coding page</h3><p>​    coding在国内访问的速度比github要快很多，可以在部署github的同时，再部署到coding上，因为coding已经被腾讯云收购，即在腾讯云上部署，方式与上面相同。</p>
+<p><img src="http://20181228.oss-cn-beijing.aliyuncs.com/2019-03-09-102317.png" alt="image-20190309182316341"></p>
+<p><img src="http://20181228.oss-cn-beijing.aliyuncs.com/2019-03-09-102441.png" alt="image-20190309182437450"></p>
+<p>​    此处需要申请SSL证书，否则会影响后面google搜索对你网站的验证，且验证时，域名的解析需要暂停对境外的解析路径，否则会一直提示失败。DNS有缓存机制，修改后需要暂停5min以上，再在coding上进行SSl申请。</p>
+<p>域名最终解析如下：</p>
+<p><img src="http://20181228.oss-cn-beijing.aliyuncs.com/2019-03-09-103035.png" alt="image-20190309183034418"></p>
+<p>至此此次搭建已基本完成。</p>
 <h2 id="next主题优化"><a href="#next主题优化" class="headerlink" title="next主题优化"></a>next主题优化</h2><h3 id="设置代码高亮"><a href="#设置代码高亮" class="headerlink" title="设置代码高亮"></a>设置代码高亮</h3><p>主题配置文件中修改，颜色有5种可以随便选</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># Code Highlight theme</span><br><span class="line"># Available value:</span><br><span class="line">#    normal | night | night eighties | night blue | night bright</span><br><span class="line"># https://github.com/chriskempson/tomorrow-theme</span><br><span class="line">highlight_theme: night bright</span><br></pre></td></tr></table></figure>
 <p>###添加valine评论系统</p>
@@ -471,8 +502,22 @@
 <p>重新上传后，样式如下</p>
 <p><img src="http://20181228.oss-cn-beijing.aliyuncs.com/2019-03-09-064605.jpg" alt="image-20190309144519045"></p>
 <p>参考：</p>
+<p>搭建</p>
+<ul>
+<li><a href="http://www.hotheat.top/" target="_blank" rel="noopener">http://www.hotheat.top/</a></li>
+</ul>
+<p>主题优化</p>
+<ul>
+<li><a href="https://me.idealli.com/post/e8d13fc.html" target="_blank" rel="noopener">https://me.idealli.com/post/e8d13fc.html</a></li>
+<li><a href="https://wuchenxu.com/2015/12/13/Static-Blog-hexo-github-7-display-updated-date/" target="_blank" rel="noopener">https://wuchenxu.com/2015/12/13/Static-Blog-hexo-github-7-display-updated-date/</a></li>
+<li><a href="https://www.jianshu.com/p/3a01cc514ce7?utm_source=oschina-app" target="_blank" rel="noopener">https://www.jianshu.com/p/3a01cc514ce7?utm_source=oschina-app</a></li>
+<li><a href="https://segmentfault.com/a/1190000013660164#articleHeader15" target="_blank" rel="noopener">https://segmentfault.com/a/1190000013660164#articleHeader15</a></li>
+<li><a href="https://segmentfault.com/a/1190000013660164#articleHeader30" target="_blank" rel="noopener">https://segmentfault.com/a/1190000013660164#articleHeader30</a></li>
+</ul>
 <p>valine评论系统：</p>
-<p><a href="https://blog.csdn.net/blue_zy/article/details/79071414" target="_blank" rel="noopener">https://blog.csdn.net/blue_zy/article/details/79071414</a></p>
+<ul>
+<li><a href="https://blog.csdn.net/blue_zy/article/details/79071414" target="_blank" rel="noopener">https://blog.csdn.net/blue_zy/article/details/79071414</a></li>
+</ul>
 
       
     </div>
@@ -652,7 +697,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装环境："><span class="nav-number">1.</span> <span class="nav-text">安装环境：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装"><span class="nav-number">2.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#部署"><span class="nav-number">3.</span> <span class="nav-text">部署</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Github上新建仓库"><span class="nav-number">3.1.</span> <span class="nav-text">Github上新建仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#绑定-SSH-Key"><span class="nav-number">3.2.</span> <span class="nav-text">绑定 SSH Key</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置网站"><span class="nav-number">3.3.</span> <span class="nav-text">配置网站</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#next主题优化"><span class="nav-number">4.</span> <span class="nav-text">next主题优化</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#设置代码高亮"><span class="nav-number">4.1.</span> <span class="nav-text">设置代码高亮</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#添加"><span class="nav-number">4.1.1.</span> <span class="nav-text">添加</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#修改评论框样式"><span class="nav-number">4.1.2.</span> <span class="nav-text">修改评论框样式</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装环境："><span class="nav-number">1.</span> <span class="nav-text">安装环境：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装"><span class="nav-number">2.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#部署"><span class="nav-number">3.</span> <span class="nav-text">部署</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Github上新建仓库"><span class="nav-number">3.1.</span> <span class="nav-text">Github上新建仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#绑定-SSH-Key"><span class="nav-number">3.2.</span> <span class="nav-text">绑定 SSH Key</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置网站"><span class="nav-number">3.3.</span> <span class="nav-text">配置网站</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Coding-page"><span class="nav-number">3.4.</span> <span class="nav-text">Coding page</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#next主题优化"><span class="nav-number">4.</span> <span class="nav-text">next主题优化</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#设置代码高亮"><span class="nav-number">4.1.</span> <span class="nav-text">设置代码高亮</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#添加"><span class="nav-number">4.1.1.</span> <span class="nav-text">添加</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#修改评论框样式"><span class="nav-number">4.1.2.</span> <span class="nav-text">修改评论框样式</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
@@ -678,15 +723,6 @@
   </span>
   <span class="author" itemprop="copyrightHolder">Jie Xing</span>
 
-  
-    <span class="post-meta-divider">|</span>
-    <span class="post-meta-item-icon">
-      <i class="fa fa-area-chart"></i>
-    </span>
-    
-      <span class="post-meta-item-text">Site words total count&#58;</span>
-    
-    <span title="Site words total count"></span>
   
 </div>
 
