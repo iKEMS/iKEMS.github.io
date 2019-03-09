@@ -88,7 +88,7 @@
 <meta property="og:site_name" content="ikems">
 <meta property="og:description" content="Selenium有了selenium，你可以指挥浏览器做任何事">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-03-08T17:53:13.559Z">
+<meta property="og:updated_time" content="2019-03-09T06:18:12.627Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="selenium">
 <meta name="twitter:description" content="Selenium有了selenium，你可以指挥浏览器做任何事">
@@ -319,7 +319,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-03-09T01:53:13+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2019-03-09T14:18:12+08:00">
                 2019-03-09
               </time>
             
@@ -565,15 +565,87 @@
 </ul>
 <h2 id="Webelement"><a href="#Webelement" class="headerlink" title="Webelement"></a>Webelement</h2><p>在通过find方法找到页面元素对象时，有时要进行进一模拟操作</p>
 <ul>
-<li><p>方法</p>
-<p>|         方法         |                             效果                             |<br>| :——————: | :———————————————————-: |<br>|      clear（）       |                         清空当前文本                         |<br>|      click（）       |                         点击当前元素                         |<br>| get_attribute(name)  | 获取元素的attribute/property，优先返回完全匹配属性名的值，如果不存在，则返回属性名中包含的name值 |<br>| screenshot(filename) |  获取当前元素的截图，保存为png，此方法在<code>chrome</code>中无法使用   |<br>|    send_keys（）     |                         模拟键入元素                         |<br>|      submit（）      |                           提交表单                           |</p>
-</li>
+<li>方法</li>
 </ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">方法</th>
+<th style="text-align:center">效果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">clear（）</td>
+<td style="text-align:center">清空当前文本</td>
+</tr>
+<tr>
+<td style="text-align:center">click（）</td>
+<td style="text-align:center">点击当前元素</td>
+</tr>
+<tr>
+<td style="text-align:center">get_attribute(name)</td>
+<td style="text-align:center">获取元素的attribute/property，优先返回完全匹配属性名的值，如果不存在，则返回属性名中包含的name值</td>
+</tr>
+<tr>
+<td style="text-align:center">screenshot(filename)</td>
+<td style="text-align:center">获取当前元素的截图，保存为png，此方法在<code>chrome</code>中无法使用</td>
+</tr>
+<tr>
+<td style="text-align:center">send_keys（）</td>
+<td style="text-align:center">模拟键入元素</td>
+</tr>
+<tr>
+<td style="text-align:center">submit（）</td>
+<td style="text-align:center">提交表单</td>
+</tr>
+</tbody>
+</table>
 <ul>
-<li><p>属性</p>
-<p>| 属性                 | 效果                                   |<br>| ——————– | ————————————– |<br>| text                 | 获取当前元素的文本内容                 |<br>| tag_name             | 获取当前元素的标签名                   |<br>| size                 | 获取当前元素的大小                     |<br>| screenshot_as_png    | 将当前元素截屏保存为png格式的二进制    |<br>| screenshot_as_base64 | 将当前元素截屏保存为base64编码的字符串 |<br>| rect                 | 获取一个包含当前元素大小和位置的字典   |<br>| parent               | 获取当前元素的父节点                   |<br>| location             | 当前元素的位置                         |</p>
-</li>
+<li>属性</li>
 </ul>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>效果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>text</td>
+<td>获取当前元素的文本内容</td>
+</tr>
+<tr>
+<td>tag_name</td>
+<td>获取当前元素的标签名</td>
+</tr>
+<tr>
+<td>size</td>
+<td>获取当前元素的大小</td>
+</tr>
+<tr>
+<td>screenshot_as_png</td>
+<td>将当前元素截屏保存为png格式的二进制</td>
+</tr>
+<tr>
+<td>screenshot_as_base64</td>
+<td>将当前元素截屏保存为base64编码的字符串</td>
+</tr>
+<tr>
+<td>rect</td>
+<td>获取一个包含当前元素大小和位置的字典</td>
+</tr>
+<tr>
+<td>parent</td>
+<td>获取当前元素的父节点</td>
+</tr>
+<tr>
+<td>location</td>
+<td>当前元素的位置</td>
+</tr>
+</tbody>
+</table>
 <ul>
 <li><p>keys</p>
 <p>当需要进行模拟键盘等复杂操作时，在send_keys()方法中传入要输入的字符串即可</p>
