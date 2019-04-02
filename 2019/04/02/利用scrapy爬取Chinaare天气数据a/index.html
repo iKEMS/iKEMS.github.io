@@ -90,22 +90,22 @@
 
 
 
-<meta name="description" content="Scrapy Selenium Chinaarea  分析老规矩先开始分析页面构成  Ctrl+U 和 Ctrl+I后发现，该页面为静态页面，我们需要获取全部城市目录下的所有城市。随意点开一个城市，我们发现下一页的访问链接，就是当前链接和城市标签href值进行拼接。  来到一个城市每月的气象数据页面，我们发现该页面为动态页面，无法直接通过requests请求获取源码，且获取下一页每日数据链接的方">
+<meta name="description" content="Scrapy Selenium Chinaarea">
 <meta property="og:type" content="article">
 <meta property="og:title" content="利用scrapy爬取Chinaare天气数据">
 <meta property="og:url" content="https://www.ikems.top/2019/04/02/利用scrapy爬取Chinaare天气数据a/index.html">
 <meta property="og:site_name" content="ikems">
-<meta property="og:description" content="Scrapy Selenium Chinaarea  分析老规矩先开始分析页面构成  Ctrl+U 和 Ctrl+I后发现，该页面为静态页面，我们需要获取全部城市目录下的所有城市。随意点开一个城市，我们发现下一页的访问链接，就是当前链接和城市标签href值进行拼接。  来到一个城市每月的气象数据页面，我们发现该页面为动态页面，无法直接通过requests请求获取源码，且获取下一页每日数据链接的方">
+<meta property="og:description" content="Scrapy Selenium Chinaarea">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://blog-image-1257868793.cos.ap-chengdu.myqcloud.com/2019-04-02-063537.png">
 <meta property="og:image" content="https://blog-image-1257868793.cos.ap-chengdu.myqcloud.com/2019-04-02-064009.png">
 <meta property="og:image" content="https://blog-image-1257868793.cos.ap-chengdu.myqcloud.com/2019-04-02-071503.png">
 <meta property="og:image" content="https://blog-image-1257868793.cos.ap-chengdu.myqcloud.com/2019-04-02-072601.png">
 <meta property="og:image" content="https://blog-image-1257868793.cos.ap-chengdu.myqcloud.com/2019-04-02-164937.png">
-<meta property="og:updated_time" content="2019-04-02T16:50:54.400Z">
+<meta property="og:updated_time" content="2019-04-02T17:45:06.131Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="利用scrapy爬取Chinaare天气数据">
-<meta name="twitter:description" content="Scrapy Selenium Chinaarea  分析老规矩先开始分析页面构成  Ctrl+U 和 Ctrl+I后发现，该页面为静态页面，我们需要获取全部城市目录下的所有城市。随意点开一个城市，我们发现下一页的访问链接，就是当前链接和城市标签href值进行拼接。  来到一个城市每月的气象数据页面，我们发现该页面为动态页面，无法直接通过requests请求获取源码，且获取下一页每日数据链接的方">
+<meta name="twitter:description" content="Scrapy Selenium Chinaarea">
 <meta name="twitter:image" content="https://blog-image-1257868793.cos.ap-chengdu.myqcloud.com/2019-04-02-063537.png">
 
 
@@ -334,7 +334,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-04-03T00:50:54+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2019-04-03T01:45:06+08:00">
                 2019-04-03
               </time>
             
@@ -416,6 +416,7 @@
 <li>Selenium</li>
 <li>Chinaarea</li>
 </ul>
+<a id="more"></a>
 <h1 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h1><p>老规矩先开始分析页面构成</p>
 <p><img src="https://blog-image-1257868793.cos.ap-chengdu.myqcloud.com/2019-04-02-063537.png" alt="image-20190402143525998"></p>
 <p>Ctrl+U 和 Ctrl+I后发现，该页面为静态页面，我们需要获取全部城市目录下的所有城市。随意点开一个城市，我们发现下一页的访问链接，就是当前链接和城市标签href值进行拼接。</p>
